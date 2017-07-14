@@ -1,6 +1,6 @@
 {
   "name": "chartengine",
-  "version": "0.1.44",
+  "version": "0.1.45",
   "description": "JS Chart engine, with dynamic filters and http requests!",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,10 @@
   "devDependencies": {
     "angular": "^1.6.4"
   },
+  "repository" :{ 
+     "type" : "git",
+     "url" : "https://github.com/dgomes1/ChartEngine"
+  }, 
   "dependencies": {
     "angular": "^1.6.4",
     "angular-animate": "^1.6.5",
