@@ -1,0 +1,24 @@
+{
+  "name": "chartengine",
+  "version": "0.1.44",
+  "description": "JS Chart engine, with dynamic filters and http requests!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diogo Gomes",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.6.4"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5",
+    "angular-material": "^1.1.4",
+    "highcharts": "^5.0.12",
+    "highcharts-export-csv": "^1.4.8",
+    "highcharts-exporting": "^0.1.2",
+    "moment": "^2.18.1"
+  }
+}
