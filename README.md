@@ -13,20 +13,20 @@ npm install chartengine --save
 | Column  | ``` const ColumnChart = require('chartengine/columnchart'); ``` |
 | Pie  | ``` const PieChart = require('chartengine/piechart'); ``` |
 
-#Mandatory Fields
+# Mandatory Fields
 | Field | Type | Example |
 |---|---|---|
 | Endpoint  | String  | http://someapiurl/endpoint |
 | **Params** | Object | {elApp: 'myAppGraph'} |
 
-#Params Object
+# Params Object
 | Field | Type | Required | Example |
 |---|---|---|---|
 | elApp | String | YES | 'myAppGraph' |
 | **filters** | object | NO | {} |
 
 
-#Filters Object
+# Filters Object
 | Field | Type  | Example |
 |---|---|---|
 | **dateFilters** | Object | {} |
@@ -35,15 +35,15 @@ npm install chartengine --save
 
 # Examples
 
-##Simple Line Chart
+## Simple Line Chart
 
-###HTML
+### HTML
 
 ```html
 <div id="myAppGraph"></div>
 ```
 
-###Javascript
+### Javascript
 
 ```js
 const LineChart = require('chartengine/LineChart');
@@ -53,7 +53,7 @@ new LineChart('http://api.url/endpoint', {
 });
 ```
 
-###Backend Response
+### Backend Response
 
 ```json
     {
@@ -83,9 +83,9 @@ new LineChart('http://api.url/endpoint', {
     
 ```
 
-##Filters
+## Filters
 
-###Dates
+### Dates
 
 ```js
 const LineChart = require('chartengine/LineChart');
@@ -101,7 +101,7 @@ new LineChart('http://api.url/endpoint', {
 });
 ```
 
-###Fields
+### Fields
 ```js
 new LineChart('http://api.url/endpoint', {
     elApp: 'myAppGraph', 
