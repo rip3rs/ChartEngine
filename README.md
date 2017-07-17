@@ -31,6 +31,7 @@ npm install chartengine --save
 |---|---|---|
 | **dateFilters** | Object | {} |
 | **fields** | Object | {} |
+| **httpHeaders** | Object | {} |
 
 
 # Examples
