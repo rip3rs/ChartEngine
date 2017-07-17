@@ -14,6 +14,7 @@ module.exports = class CoreChart{
     constructor(endpoint, params, type){
         this.endpoint = endpoint;
         this.params = params;
+        this.httpHeaders = prams.httpHeaders ? params.httpHeaders : {};
         this.type = type;
         this.checkFilters();
         this.setDefaultParams();
@@ -163,7 +164,10 @@ module.exports = class CoreChart{
             };
 
             $scope.render = ()=>{
-                $http.get(self.endpoint, {params: $scope.getParams()}).then((result) => {
+                $http.get(self.endpoint, {
+                    headers: self.httpHeaders,
+                    params: $scope.getParams()
+                }).then((result) => {
                     self.buildChart(self.params.elApp, self.getResult(self.formatData, result), self.type, self.getDefaultParams(self.defaultParams, result));
                 });
             }
