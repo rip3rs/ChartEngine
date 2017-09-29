@@ -12,10 +12,10 @@
 
 | Chart | Example |
 |---|---|
-| Line  | `const LineChart = require('chartengine.LineChart');` |
-| Bars  | `const BarChart = require('chartengine.BarChart');` |
-| Column  | `const ColumnChart = require('chartengine.ColumnChart');` |
-| Pie  | `const PieChart = require('chartengine.PieChart');` |
+| Line  | `chartengine.LineChart` |
+| Bars  | `chartengine.BarChart'` |
+| Column  | `chartengine.ColumnChart'` |
+| Pie  | `chartengine.PieChart'` |
 
 ## Mandatory Fields
 | Field | Type | Example |
@@ -51,9 +51,9 @@
 #### Javascript
 
 ```js
-const LineChart = require('chartengine.LineChart');
+import { chartengine } from 'chartengine';
 
-new LineChart('http://api.url/endpoint', {
+new chartengine.LineChart('http://api.url/endpoint', {
     elApp: 'myAppGraph'
 });
 ```
@@ -92,10 +92,10 @@ new LineChart('http://api.url/endpoint', {
 #### Dates
 
 ```js
-const LineChart = require('chartengine.LineChart');
+import { chartengine } from 'chartengine';
 
-new LineChart('http://api.url/endpoint', {
-    elApp: 'myAppGraph', 
+new chartengine.LineChart('http://api.url/endpoint', {
+    elApp: 'myAppGraph',
     filters: {
       dateFilters: {
         someDateVar: new Date(), //date object (or string: '2017-06-20')
@@ -108,8 +108,8 @@ new LineChart('http://api.url/endpoint', {
 #### Fields
 
 ```js
-new LineChart('http://api.url/endpoint', {
-    elApp: 'myAppGraph', 
+new chartengine.LineChart('http://api.url/endpoint', {
+    elApp: 'myAppGraph',
     filters: {
         dateFilters: {
             dateFilters: {
