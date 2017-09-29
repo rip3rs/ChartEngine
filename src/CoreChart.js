@@ -14,12 +14,16 @@ module.exports = class CoreChart{
     constructor(endpoint, params, type){
         this.endpoint = endpoint;
         this.params = params;
-        this.httpHeaders = prams.httpHeaders ? params.httpHeaders : {};
         this.type = type;
+        //this.setHttpHeaders();
         this.checkFilters();
         this.setDefaultParams();
         this.setMetrics();
         this.setExport();
+    }
+
+    setHttpHeaders(){
+        this.httpHeaders = this.prams.httpHeaders ? this.params.httpHeaders : {};
     }
 
     setExport(){
