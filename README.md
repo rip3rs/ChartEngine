@@ -1,32 +1,36 @@
-# Installation
+# ChartEngine
 
-```shell
-npm install chartengine --save
-```
+## Installation
 
-# Available Charts
+`npm install chartengine --save`
+
+## Usage
+
+`import { chartengine } from 'chartengine';`
+
+## Available Charts
 
 | Chart | Example |
 |---|---|
-| Line  | ``` const LineChart = require('chartengine'); ``` |
-| Bars  | ``` const BarsChart = require('chartengine'); ``` |
-| Column  | ``` const ColumnChart = require('chartengine'); ``` |
-| Pie  | ``` const PieChart = require('chartengine'); ``` |
+| Line  | `const LineChart = require('chartengine.LineChart');` |
+| Bars  | `const BarChart = require('chartengine.BarChart');` |
+| Column  | `const ColumnChart = require('chartengine.ColumnChart');` |
+| Pie  | `const PieChart = require('chartengine.PieChart');` |
 
-# Mandatory Fields
+## Mandatory Fields
 | Field | Type | Example |
 |---|---|---|
 | Endpoint  | String  | http://someapiurl/endpoint |
 | **Params** | Object | {elApp: 'myAppGraph'} |
 
-# Params Object
+## Params Object
 | Field | Type | Required | Example |
 |---|---|---|---|
 | elApp | String | YES | 'myAppGraph' |
 | **filters** | object | NO | {} |
 
 
-# Filters Object
+## Filters Object
 | Field | Type  | Example |
 |---|---|---|
 | **dateFilters** | Object | {} |
@@ -34,27 +38,27 @@ npm install chartengine --save
 | **httpHeaders** | Object | {} |
 
 
-# Examples
+## Examples
 
-## Simple Line Chart
+### Simple Line Chart
 
-### HTML
+#### HTML
 
 ```html
 <div id="myAppGraph"></div>
 ```
 
-### Javascript
+#### Javascript
 
 ```js
-const LineChart = require('chartengine');
+const LineChart = require('chartengine.LineChart');
 
 new LineChart('http://api.url/endpoint', {
     elApp: 'myAppGraph'
 });
 ```
 
-### Backend Response
+#### Backend Response
 
 ```json
     {
@@ -81,15 +85,14 @@ new LineChart('http://api.url/endpoint', {
             }
         ]
     }
-    
 ```
 
-## Filters
+### Filters
 
-### Dates
+#### Dates
 
 ```js
-const LineChart = require('chartengine');
+const LineChart = require('chartengine.LineChart');
 
 new LineChart('http://api.url/endpoint', {
     elApp: 'myAppGraph', 
@@ -102,7 +105,8 @@ new LineChart('http://api.url/endpoint', {
 });
 ```
 
-### Fields
+#### Fields
+
 ```js
 new LineChart('http://api.url/endpoint', {
     elApp: 'myAppGraph', 
@@ -129,6 +133,6 @@ new LineChart('http://api.url/endpoint', {
 });
 ```
 
-## Documentation
+### Documentation
 
-**TBA**
+TBA
