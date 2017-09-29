@@ -8,13 +8,18 @@
   },
   "author": "Diogo Gomes",
   "license": "MIT",
-  "devDependencies": {
-    "angular": "^1.6.4"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgomes1/ChartEngine"
   },
-  "repository" :{ 
-     "type" : "git",
-     "url" : "https://github.com/dgomes1/ChartEngine"
-  }, 
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^7.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
   "dependencies": {
     "angular": "^1.6.4",
     "angular-animate": "^1.6.5",
