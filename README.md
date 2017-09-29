@@ -8,10 +8,10 @@ npm install chartengine --save
 
 | Chart | Example |
 |---|---|
-| Line  | ``` const LineChart = require('chartengine/linechart'); ``` |
-| Bars  | ``` const BarsChart = require('chartengine/barchart'); ``` |
-| Column  | ``` const ColumnChart = require('chartengine/columnchart'); ``` |
-| Pie  | ``` const PieChart = require('chartengine/piechart'); ``` |
+| Line  | ``` const LineChart = require('chartengine'); ``` |
+| Bars  | ``` const BarsChart = require('chartengine'); ``` |
+| Column  | ``` const ColumnChart = require('chartengine'); ``` |
+| Pie  | ``` const PieChart = require('chartengine'); ``` |
 
 # Mandatory Fields
 | Field | Type | Example |
@@ -47,7 +47,7 @@ npm install chartengine --save
 ### Javascript
 
 ```js
-const LineChart = require('chartengine/LineChart');
+const LineChart = require('chartengine');
 
 new LineChart('http://api.url/endpoint', {
     elApp: 'myAppGraph'
@@ -89,7 +89,7 @@ new LineChart('http://api.url/endpoint', {
 ### Dates
 
 ```js
-const LineChart = require('chartengine/LineChart');
+const LineChart = require('chartengine');
 
 new LineChart('http://api.url/endpoint', {
     elApp: 'myAppGraph', 
