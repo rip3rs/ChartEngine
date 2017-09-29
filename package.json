@@ -1,6 +1,6 @@
 {
   "name": "chartengine",
-  "version": "0.1.51",
+  "version": "1.2.1",
   "description": "JS Chart engine, with dynamic filters and http requests!",
   "main": "index.js",
   "scripts": {
