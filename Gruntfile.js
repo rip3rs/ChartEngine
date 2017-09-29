@@ -23,8 +23,16 @@ module.exports = function(grunt) {
 					}
 			]
 			}
+		},
+		copy: {
+			main: {
+				files: [
+					{expand: true, src: ['./package.json'], dest: 'dist/', filter: 'isFile'},
+				],
+			},
 		}
 	});
 
-	grunt.registerTask('default', ['babel']);
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.registerTask('default', ['babel', 'copy']);
 }

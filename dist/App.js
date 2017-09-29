@@ -1,2 +1,0 @@
-'use strict';var angular=require('angular');var aria=require('angular-aria');var ngMaterial=require('angular-material');var ChartEngine=angular.module('chartEngine',['ngMaterial']);var moment=require('moment');ChartEngine.config(function($interpolateProvider){$interpolateProvider.startSymbol('{[{').endSymbol('}]}')});ChartEngine.config(function($mdDateLocaleProvider){$mdDateLocaleProvider.formatDate=function(date){return moment(date).format('DD-MM-YYYY')}});module.exports=ChartEngine;
-//# sourceMappingURL=App.js.map
