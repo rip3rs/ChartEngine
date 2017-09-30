@@ -18,25 +18,27 @@
 | Pie  | `chartengine.PieChart` |
 
 ## Mandatory Fields
+
 | Field | Type | Example |
 |---|---|---|
-| Endpoint  | String  | http://someapiurl/endpoint |
+| Endpoint  | String  | 'http://someapiurl/endpoint' |
 | **Params** | Object | {elApp: 'myAppGraph'} |
 
 ## Params Object
+
 | Field | Type | Required | Example |
 |---|---|---|---|
+| method | String | YES | 'get' |
 | elApp | String | YES | 'myAppGraph' |
 | **filters** | object | NO | {} |
 
-
 ## Filters Object
+
 | Field | Type  | Example |
 |---|---|---|
 | **dateFilters** | Object | {} |
 | **fields** | Object | {} |
 | **httpHeaders** | Object | {} |
-
 
 ## Examples
 
