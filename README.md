@@ -13,9 +13,9 @@
 | Chart | Example |
 |---|---|
 | Line  | `chartengine.LineChart` |
-| Bars  | `chartengine.BarChart'` |
-| Column  | `chartengine.ColumnChart'` |
-| Pie  | `chartengine.PieChart'` |
+| Bars  | `chartengine.BarChart` |
+| Column  | `chartengine.ColumnChart` |
+| Pie  | `chartengine.PieChart` |
 
 ## Mandatory Fields
 | Field | Type | Example |
